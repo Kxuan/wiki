@@ -222,6 +222,10 @@ Finally, read the sensor output:
 To enable the 1-wire interface add this line to `/boot/config.txt` and reboot.
 `dtoverlay=w1-gpio`
 
+### UART
+Please refer to [this](https://www.raspberrypi.org/documentation/configuration/uart.md) link.
+And dont forget to remove the "kgdboc=ttyAMA0,115200" from /boot/cmdline.txt, or your kernel may hang during booting up.
+
 ## See Also
 
 * [Raspberry Pi](https://www.raspberrypi.org/) - Official website
